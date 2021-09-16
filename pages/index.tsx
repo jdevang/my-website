@@ -5,10 +5,9 @@ import {
   Image,
   chakra,
   useColorModeValue,
-  useColorMode,
   Skeleton,
   Link as ChakraLink,
-  useBreakpoint,
+  // useBreakpoint,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -16,8 +15,8 @@ import { NextSeo } from 'next-seo';
 
 export default function Home(): React.ReactElement {
   const [imageLoad, setImageLoad] = useState(false);
-  const bp = useBreakpoint();
-  const { colorMode } = useColorMode();
+  // const bp = useBreakpoint();
+  // const { colorMode } = useColorMode();
   return (
     <>
       <NextSeo title='Home' />

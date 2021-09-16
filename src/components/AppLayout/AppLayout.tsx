@@ -9,7 +9,7 @@ interface AppLayoutProps {
 }
 
 const AppLayout = ({ children }: AppLayoutProps): JSX.Element => {
-  const router = useRouter()
+  // const router = useRouter()
 
   return (
     <>

@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react'
 import LineHeading from '@/components/LineHeading'
 import ToolGrid from '@/components/ToolGrid'
-import { AiFillVideoCamera, AiTwotoneFolder, AiFillDatabase, AiFillTool, AiFillAppstore } from 'react-icons/ai'
+import { AiFillVideoCamera, AiFillDatabase, AiFillTool, AiFillAppstore } from 'react-icons/ai'
 import { FaGamepad } from 'react-icons/fa'
 import { NextSeo } from 'next-seo'
 
