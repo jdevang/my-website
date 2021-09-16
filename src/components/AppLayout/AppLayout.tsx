@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, useColorModeValue } from '@chakra-ui/react'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import Nav from '../NavBar/Nav'
 import Footer from '../Footer/Footer'
 

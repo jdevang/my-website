@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Box,
   Flex,
@@ -14,7 +14,7 @@ import DesktopNav from './DesktopNav';
 import { useRouter } from 'next/router';
 import { transparentize } from '@chakra-ui/theme-tools';
 import styled from '@emotion/styled';
-import useScrollPosition from '@/hooks/useScrollPosition.hook';
+// import useScrollPosition from '@/hooks/useScrollPosition.hook';
 // import { useEffect } from 'react';
 
 const links = [
