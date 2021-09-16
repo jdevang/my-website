@@ -21,7 +21,7 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
       <NextSeo title='Projects' />
       <Box width='full' px={3} minH='100vh' height='full' mx='auto' maxW='6xl' py='28'>
         <Flex direction='column' alignItems='center' width='full' px={3} height='full' mx='auto'>
-          <LineHeading fontSize={{ base: `5xl`, md: `6xl` }} mx='auto' textAlign='center'>
+          {/* <LineHeading fontSize={{ base: `5xl`, md: `6xl` }} mx='auto' textAlign='center'>
             My projects
           </LineHeading>
           <Text mt={3}>A quick collection of my projects.</Text>
@@ -43,9 +43,9 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
                   projectData={data}
                 />
               ))}
-          </VStack>
+          </VStack> */}
           <LineHeading fontSize={{ base: `5xl`, lg: `5xl` }} textAlign='center'>
-            Repositories
+            Projects
           </LineHeading>
           <Text mt={3}>A list of all of the public repositories on my GitHub.</Text>
           <Button

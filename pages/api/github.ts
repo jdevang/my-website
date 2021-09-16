@@ -24,7 +24,9 @@ export default async function handler(
   const user = await userResponse.json();
   const repositories = await userReposResponse.json();
 
-  const notForked = repositories.filter((repo: any) => !repo.fork);
+  const withoutProfile = repositories.filter((repo: any) => !(repo.full_name == 'junglesucks/junglesucks'));
+
+  const notForked = withoutProfile.filter((repo: any) => !repo.fork);
 
   const stars =
     notForked.reduce(

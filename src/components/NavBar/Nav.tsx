@@ -26,6 +26,10 @@ const links = [
     name: `Projects`,
     link: `/projects`,
   },
+  // {
+  //   name: `Portfolio`,
+  //   link: `https://portfolio.junglesucks.com`,
+  // },
   {
     type: `dropdown`,
     name: `More`,
@@ -51,14 +55,14 @@ function Nav(): JSX.Element {
 
   const blogPage = pathname === '/blog/[slug]';
 
-  useEffect(() => {
-    if (blogPage) {
-      const newWidth = y / max;
-      if (newWidth !== width) {
-        setWidth(newWidth * 100);
-      }
-    }
-  }, [y, max, width, blogPage]);
+  // useEffect(() => {
+  //   if (blogPage) {
+  //     const newWidth = y / max;
+  //     if (newWidth !== width) {
+  //       setWidth(newWidth * 100);
+  //     }
+  //   }
+  // }, [y, max, width, blogPage]);
 
   return (
     <chakra.header

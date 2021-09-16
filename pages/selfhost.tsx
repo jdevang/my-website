@@ -15,23 +15,23 @@ import {
 } from '@chakra-ui/react'
 import LineHeading from '@/components/LineHeading'
 import ToolGrid from '@/components/ToolGrid'
-import { AiFillApple, AiFillChrome, AiFillWindows, AiOutlineDesktop } from 'react-icons/ai'
-import { BsPhone } from 'react-icons/bs'
+import { AiFillVideoCamera, AiTwotoneFolder, AiFillDatabase, AiFillTool, AiFillAppstore } from 'react-icons/ai'
+import { FaGamepad } from 'react-icons/fa'
 import { NextSeo } from 'next-seo'
 
 function Tools(): React.ReactElement {
   return (
     <>
-      <NextSeo title='Tools' />
+      <NextSeo title='Selfhost' />
       <Flex direction='column' alignItems='center' width='full' minH='100vh' mx='auto' maxW='6xl'>
         <LineHeading
           mt='28'
           fontSize={{ base: `3xl`, sm: `4xl`, md: `5xl`, lg: `6xl` }}
           textAlign='center'
         >
-          Tools
+          Selfhost
         </LineHeading>
-        <Text mt={3}>Some tools that I find useful :).</Text>
+        <Text mt={3}>Some stuff that I selfhost on a docker container at my home :).</Text>
         <Tabs variant='soft-rounded' colorScheme='blue' align='center' w='100%' mt='10' mb='24'>
           <TabList display='flex' flexWrap='wrap'>
             <Tab
@@ -45,8 +45,8 @@ function Tools(): React.ReactElement {
               mt={2}
             >
               <HStack spacing={1}>
-                <Icon as={AiFillApple} />
-                <Text>Mac</Text>
+                <Icon as={AiFillAppstore} />
+                <Text>All</Text>
               </HStack>
             </Tab>
             <Tab
@@ -60,8 +60,8 @@ function Tools(): React.ReactElement {
               mt={2}
             >
               <HStack spacing={1}>
-                <Icon as={AiFillWindows} />
-                <Text>Windows</Text>
+                <Icon as={AiFillVideoCamera} />
+                <Text>Media</Text>
               </HStack>
             </Tab>
             <Tab
@@ -76,23 +76,8 @@ function Tools(): React.ReactElement {
               s
             >
               <HStack spacing={1}>
-                <Icon as={AiFillChrome} />
-                <Text>Chrome</Text>
-              </HStack>
-            </Tab>
-            <Tab
-              bg={useColorModeValue(`white`, `gray.800`)}
-              color={useColorModeValue(`gray.600`, `gray.500`)}
-              _selected={{
-                color: `blue.800`,
-                bg: `blue.100`,
-              }}
-              mr={2}
-              mt={2}
-            >
-              <HStack spacing={1}>
-                <Icon as={AiOutlineDesktop} />
-                <Text>Web</Text>
+                <Icon as={AiFillDatabase} />
+                <Text>Downloaders</Text>
               </HStack>
             </Tab>
             <Tab
@@ -106,27 +91,42 @@ function Tools(): React.ReactElement {
               mt={2}
             >
               <HStack spacing={1}>
-                <Icon as={BsPhone} />
-                <Text>IOS</Text>
+                <Icon as={AiFillTool} />
+                <Text>Tools</Text>
+              </HStack>
+            </Tab>
+            <Tab
+              bg={useColorModeValue(`white`, `gray.800`)}
+              color={useColorModeValue(`gray.600`, `gray.500`)}
+              _selected={{
+                color: `teal.800`,
+                bg: `teal.100`,
+              }}
+              mr={2}
+              mt={2}
+            >
+              <HStack spacing={1}>
+                <Icon as={FaGamepad} />
+                <Text>Games</Text>
               </HStack>
             </Tab>
           </TabList>
 
           <TabPanels>
             <TabPanel>
-              <ToolGrid filter='mac' />
+              <ToolGrid filter='all' />
             </TabPanel>
             <TabPanel>
-              <ToolGrid filter='windows' />
+              <ToolGrid filter='media' />
             </TabPanel>
             <TabPanel>
-              <ToolGrid filter='chrome' />
+              <ToolGrid filter='downloaders' />
             </TabPanel>
             <TabPanel>
-              <ToolGrid filter='web' />
+              <ToolGrid filter='tools' />
             </TabPanel>
             <TabPanel>
-              <ToolGrid filter='ios' />
+              <ToolGrid filter='games' />
             </TabPanel>
           </TabPanels>
         </Tabs>

@@ -44,7 +44,7 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
           site_name: `JungleSucks`,
           images: [
             {
-              url: `https://www.junglesucks.com/static/images/profile.gif`,
+              url: `https://me.junglesucks.com/static/images/profile.gif`,
               alt: `Profile Picture`,
             },
           ],
