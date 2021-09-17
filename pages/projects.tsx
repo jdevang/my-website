@@ -91,7 +91,7 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
   )
 }
 
-export async function getStaticProps(): Promise<{ props: ProjectsProps }> {
+export async function getServerSideProps(): Promise<{ props: ProjectsProps }> {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_HOST || `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}/api/github`
   )
