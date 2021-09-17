@@ -26,18 +26,19 @@ const links = [
     name: `Projects`,
     link: `/projects`,
   },
-  // {
-  //   name: `Portfolio`,
-  //   link: `https://portfolio.junglesucks.com`,
-  // },
+  {
+    name: `Music`,
+    link: `/spotify`,
+  },
+  {
+    name: `Portfolio`,
+    // link: `https://portfolio.junglesucks.com`,
+    link: `/wip`
+  },
   {
     type: `dropdown`,
     name: `More`,
     links: [
-      {
-        name: `Music`,
-        link: `/spotify`,
-      },
       {
         name: `Blog`,
         link: `/blog`,
