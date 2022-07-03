@@ -41,8 +41,13 @@ const links = [
     links: [
       {
         name: `Blog`,
-        link: `/blog`,
+        link: `https://ghost.junglesucks.com`,
       },
+      // {
+      //   name: 'JGEZ',
+      //   // link: `https://jgez.junglesucks.com`,
+      //   link: `/jgez`
+      // }
     ],
   },
 ];
