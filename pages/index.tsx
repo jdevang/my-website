@@ -96,8 +96,8 @@ export default function Home(): React.ReactElement {
                 <Link href='/links' passHref>
                   <ChakraLink>tools</ChakraLink>
                 </Link>{' '}
-                that I like. Someday I might even write{' '}
-                <Link href='/blog' passHref>
+                that I like. If you get lucky you might even find some of my {' '}
+                <Link href='https://ghost.junglesucks.com' passHref>
                   <ChakraLink>blogs</ChakraLink>
                 </Link>
                 .
