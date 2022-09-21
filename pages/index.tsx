@@ -85,18 +85,18 @@ export default function Home(): React.ReactElement {
               >
                 Welcome to my website! I use this as a connection to everything me, and test things out.
                 You can see what music I like on{' '}
-                <Link href='/music' passHref>
+                <Link href='/spotify' passHref>
                   <ChakraLink>music page</ChakraLink>
                 </Link>{' '}
                 or stuff I{' '}
-                <Link href='/links' passHref>
+                <Link href='/selfhost' passHref>
                   <ChakraLink>self-hosted </ChakraLink>
                 </Link>{' '} 
                 &{' '}
-                <Link href='/links' passHref>
-                  <ChakraLink>tools</ChakraLink>
+                <Link href='/projects' passHref>
+                  <ChakraLink>projects</ChakraLink>
                 </Link>{' '}
-                that I like. If you get lucky you might even find some of my {' '}
+                that I've done. If you get lucky you might even find some of my {' '}
                 <Link href='https://ghost.junglesucks.com' passHref>
                   <ChakraLink>blogs</ChakraLink>
                 </Link>
