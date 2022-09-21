@@ -96,7 +96,7 @@ export default function Home(): React.ReactElement {
                 <Link href='/projects' passHref>
                   <ChakraLink>projects</ChakraLink>
                 </Link>{' '}
-                that I've done. If you get lucky you might even find some of my {' '}
+                that I\'ve done. If you get lucky you might even find some of my {' '}
                 <Link href='https://ghost.junglesucks.com' passHref>
                   <ChakraLink>blogs</ChakraLink>
                 </Link>
