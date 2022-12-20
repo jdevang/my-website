@@ -7,10 +7,10 @@ import {
   MenuItem,
   MenuList,
   useColorMode,
-  Link as ChakraLink,
+  Link,
 } from '@chakra-ui/react'
-import { transparentize } from '@chakra-ui/theme-tools'
-import Link from 'next/link'
+import colors from 'simple-color-functions';
+import NextLink from 'next/link'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import ToggleTheme from './ToggleTheme'
 
@@ -22,8 +22,8 @@ function DesktopNav({ links }: { links: any }): JSX.Element {
       {links.map((linkItem: any, index: number) => {
         if (linkItem.type !== `dropdown`) {
           return (
-            <Link href={linkItem.link} key={index.toString()} passHref>
-              <ChakraLink
+              <Link as={ NextLink } passHref
+                href={linkItem.link}
                 key={index.toString()}
                 color={colorMode === 'light' ? `gray.800` : `white`}
                 fontSize='lg'
@@ -42,8 +42,8 @@ function DesktopNav({ links }: { links: any }): JSX.Element {
                   left: 0,
                   bg:
                     colorMode === 'light'
-                      ? transparentize(`brand.500`, 0.46)
-                      : transparentize(`brand.500`, 0.36),
+                      ? colors(`brand.500`).alpha(0.46)
+                      : colors(`brand.500`).alpha(0.36),
                   zIndex: -1,
                 }}
                 _hover={{
@@ -53,8 +53,7 @@ function DesktopNav({ links }: { links: any }): JSX.Element {
                 }}
               >
                 {linkItem.name}
-              </ChakraLink>
-            </Link>
+              </Link>
           )
         }
         if (linkItem.type === `dropdown`) {
@@ -79,8 +78,8 @@ function DesktopNav({ links }: { links: any }): JSX.Element {
                   left: 0,
                   bg:
                     colorMode === 'light'
-                      ? transparentize(`brand.500`, 0.46)
-                      : transparentize(`brand.500`, 0.36),
+                      ? colors(`brand.500`).alpha(0.46)
+                      : colors(`brand.500`).alpha(0.36),
                   zIndex: -1,
                 }}
                 _hover={{
@@ -95,11 +94,9 @@ function DesktopNav({ links }: { links: any }): JSX.Element {
               </MenuButton>
               <MenuList>
                 {linkItem.links.map((item: any, i: number) => (
-                  <Link href={item.link} key={`${i.toString()}MenuLink`} passHref>
-                    <MenuItem as='a' sx={{ cursor: `pointer` }} key={i.toString()}>
+                    <MenuItem as={NextLink} href={item.link} sx={{ cursor: `pointer` }} key={i.toString()} passHref>
                       {item.name}
                     </MenuItem>
-                  </Link>
                 ))}
               </MenuList>
             </Menu>

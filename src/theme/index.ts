@@ -1,5 +1,6 @@
 import { ChakraTheme, extendTheme, ThemeComponentProps } from '@chakra-ui/react';
-import { transparentize, mode } from '@chakra-ui/theme-tools';
+import { mode } from '@chakra-ui/theme-tools';
+import colors from 'simple-color-functions';
 
 // 2. Call `extendTheme` and pass your custom values
 
@@ -26,9 +27,9 @@ const theme = extendTheme({
     Button: {
       variants: {
         ghostAlwaysOn: (props: ThemeComponentProps<ChakraTheme>) => {
-          const darkBg = transparentize(`${props.colorScheme}.200`, 0.12)(props.theme);
-          const darkHoverBg = transparentize(`${props.colorScheme}.200`, 0.24)(props.theme);
-          const darkActiveBg = transparentize(`${props.colorScheme}.200`, 0.36)(props.theme);
+          const darkBg = colors(`${props.colorScheme}.200`).alpha(0.12)(props.theme);
+          const darkHoverBg = colors(`${props.colorScheme}.200`).alpha(0.24)(props.theme);
+          const darkActiveBg = colors(`${props.colorScheme}.200`).alpha(0.36)(props.theme);
           return {
             color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
             bgColor: props.colorMode === 'light' ? `${props.colorScheme}.50` : darkBg,

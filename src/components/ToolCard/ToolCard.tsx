@@ -11,7 +11,7 @@ import {
   Tag,
   Stack,
 } from '@chakra-ui/react';
-import { usePalette } from 'react-palette';
+import { usePalette } from '@junglesucks/react-palette';
 import { ToolType } from '@/data/tools';
 
 export const ToolCard = ({ name, description, link, id, labels }: ToolType): JSX.Element => {
@@ -19,6 +19,7 @@ export const ToolCard = ({ name, description, link, id, labels }: ToolType): JSX
   const { colorMode } = useColorMode();
 
   return (
+    
     <Box as='a' href={link} height='100%'>
       <SimpleGrid
         bg={useColorModeValue(`white`, `gray.900`)}

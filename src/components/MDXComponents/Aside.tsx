@@ -1,6 +1,5 @@
 import React from 'react'
 import { chakra, useColorModeValue, Text, Heading } from '@chakra-ui/react'
-import { transparentize } from '@chakra-ui/theme-tools'
 
 interface AsideProps {
   children: React.ReactNode
@@ -27,7 +26,7 @@ export const Aside = ({ children, type, title, ...props }: AsideProps): JSX.Elem
       borderLeft={'4px solid'}
       borderColor={useColorModeValue(`${colors[type]}.500`, `${colors[type]}.400`)}
       //@ts-expect-error transparentize tools return string, but types are not applicable.
-      bg={useColorModeValue(`${colors[type]}.100`, transparentize(`${colors[type]}.300`, 0.18))}
+      bg={useColorModeValue(`${colors[type]}.100`, colors(`${colors[type]}.300`).alpha(0.18))}
       {...props}
     >
       <chakra.div

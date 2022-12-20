@@ -53,12 +53,12 @@ const Tools: ToolType[] = [
     description: `Ombi lets your Jellyfin users request content by themselves.`,
   },
   {
-    id: `shortie`,
+    id: `shlink`,
     category: [`all`, `tools`],
-    link: `https://github.com/mridulganga/shortie/`,
+    link: `https://github.com/shlinkio/shlink`,
     labels: [`Url Shortener`],
-    name: `Shortie`,
-    description: `Shortie makes your long url's tiny.`,
+    name: `Shlink`,
+    description: `Shlink makes your long url's tiny.`,
   },
   {
     id: `nzbhydra`,
@@ -99,6 +99,14 @@ const Tools: ToolType[] = [
     labels: [`Docker Manager`],
     name: `Portainer`,
     description: `Portainer enables centralized configuration of Docker environments.`,
+  },
+  {
+    id: `minecraft`,
+    category: [`all`, `games`],
+    link: `https://www.minecraft.net/en-us`,
+    labels: [`Survival Game`],
+    name: `Minecraft`,
+    description: `Explore your own unique world, survive the night, and create anything you can imagine`,
   },
 ];
 export default Tools;

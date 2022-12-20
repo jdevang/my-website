@@ -1,6 +1,6 @@
 import { chakra, Tooltip, useColorModeValue } from '@chakra-ui/react'
 
-import { transparentize } from '@chakra-ui/theme-tools'
+import colors from 'simple-color-functions';
 
 // interface DefinitionProps {
 //   link?: string;
@@ -49,8 +49,7 @@ export const Definition = ({ term, definition, link }: DefinitionStylesProps): J
         lineHeight={3}
         as={link ? 'a' : 'span'}
         href={link ? link : null}
-        //@ts-expect-error transparentize tools return string, but types are not applicable.
-        bg={useColorModeValue('brand.50', transparentize('brand.200', 0.16))}
+        bg={useColorModeValue('brand.50', colors('brand.200').alpha(0.16))}
         borderRadius={'md'}
         _hover={{ cursor: link ? 'pointer' : 'normal' }}
         px={2}

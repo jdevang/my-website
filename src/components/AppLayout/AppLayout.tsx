@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, useColorModeValue } from '@chakra-ui/react'
 // import { useRouter } from 'next/router'
-import Nav from '../NavBar/Nav'
-import Footer from '../Footer/Footer'
+import Nav from '@/components/NavBar/Nav'
+import Footer from '@/components/Footer/Footer'
 
 interface AppLayoutProps {
   children: React.ReactElement

@@ -33,8 +33,8 @@ export const SongCard = ({ song, titleCard, isPlaying }: SongCardProps): JSX.Ele
           <Image
             alt={song?.name + ' album cover'}
             className={styles.image}
-            width={titleCard ? `150px` : `110px`}
-            height={titleCard ? `150px` : `110px`}
+            width={titleCard ? 150 : 110}
+            height={titleCard ? 150 : 110}
             onLoad={() => setImageLoad(true)}
             src={
               song.albumImageUrl ||
@@ -102,8 +102,8 @@ export const ArtistCard = ({ artist }: { artist: any }): JSX.Element => {
         <Image
           className={styles.artistImage}
           alt={artist?.name + ' artist image'}
-          width='150px'
-          height='150px'
+          width={150}
+          height={150}
           onLoad={() => setImageLoad(true)}
           src={artist.images.filter((image: any) => image.height >= 150).slice(-1)[0].url}
         />

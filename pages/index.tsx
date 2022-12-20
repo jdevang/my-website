@@ -6,17 +6,15 @@ import {
   chakra,
   useColorModeValue,
   Skeleton,
-  Link as ChakraLink,
+  Link,
   // useBreakpoint,
 } from '@chakra-ui/react';
-import Link from 'next/link';
+import NextLink from 'next/link';
 import React, { useState } from 'react';
 import { NextSeo } from 'next-seo';
 
 export default function Home(): React.ReactElement {
   const [imageLoad, setImageLoad] = useState(false);
-  // const bp = useBreakpoint();
-  // const { colorMode } = useColorMode();
   return (
     <>
       <NextSeo title='Home' />
@@ -44,17 +42,15 @@ export default function Home(): React.ReactElement {
             mx='auto'
             my={{ xl: '16' }}
           >
-            <Skeleton isLoaded={imageLoad} boxSize='250px' borderRadius='2xl' m='auto'>
-              <Image
-                flexGrow={3}
-                borderRadius='2xl'
-                boxSize='250px'
-                src='./static/images/profile.gif'
-                objectFit='cover'
-                alt='Michael Hall'
-                onLoad={() => setImageLoad(true)}
-              />
-            </Skeleton>
+            <Image
+              flexGrow={3}
+              borderRadius='2xl'
+              boxSize='250px'
+              src='./static/images/profile.gif'
+              objectFit='cover'
+              alt='Junglesucks'
+              onLoad={() => setImageLoad(true)}
+            />
             <Flex
               alignSelf='center'
               direction='column'
@@ -83,22 +79,22 @@ export default function Home(): React.ReactElement {
                 fontSize='xl'
                 mt={2}
               >
-                Welcome to my website! I use this as a connection to everything me, and test things out.
-                You can see what music I like on{' '}
-                <Link href='/spotify' passHref>
-                  <ChakraLink>music page</ChakraLink>
+                Welcome to my website!
+                You can see what music I like over{' '}
+                <Link as={NextLink} href='/spotify' passHref>
+                here
                 </Link>{' '}
-                or stuff I{' '}
-                <Link href='/selfhost' passHref>
-                  <ChakraLink>self-hosted </ChakraLink>
+                or{' '}
+                <Link as={NextLink} href='/selfhost' passHref>
+                  self-hosted
                 </Link>{' '} 
-                &{' '}
-                <Link href='/projects' passHref>
-                  <ChakraLink>projects</ChakraLink>
+                stuff I&apos;ve dabbled in &{' '}
+                <Link as={NextLink} href='/projects' passHref>
+                  projects
                 </Link>{' '}
                 that I&apos;ve done. If you get lucky you might even find some of my {' '}
-                <Link href='https://ghost.junglesucks.com' passHref>
-                  <ChakraLink>blogs</ChakraLink>
+                <Link as={NextLink} href='https://ghost.junglesucks.com' passHref>
+                  blogs
                 </Link>
                 .
               </chakra.p>

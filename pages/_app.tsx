@@ -49,15 +49,15 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
             },
           ],
         }}
-        description='This site is a connection to everything me, and I test things here.'
+        description='This site is a test-bench.'
       />
       <ChakraProvider theme={theme}>
         <PlausibleProvider
-          domain='michael-hall.me'
+          domain='junglesucks.com'
           selfHosted
           trackOutboundLinks
           enabled={process.env.NODE_ENV === 'production'}
-          customDomain={'https://stats.michael-hall.me'}
+          customDomain={'https://me.junglesucks.com'}
         >
           <QueryClientProvider client={queryClient}>
             <MDXProvider components={MDXComponents}>

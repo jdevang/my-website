@@ -49,7 +49,7 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
           <LineHeading fontSize={{ base: `5xl`, lg: `5xl` }} textAlign='center'>
             Projects
           </LineHeading>
-          <Text mt={3}>A list of all of the public repositories on my GitHub.</Text>
+          <Text mt={3}>A list of some of the public repositories on my GitHub.</Text>
           <Button
             as='a'
             href='https://github.com/junglesucks'

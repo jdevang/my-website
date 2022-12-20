@@ -14,7 +14,7 @@ import {
   AspectRatio,
   ChakraProps,
 } from '@chakra-ui/react';
-import LineHeading from '../LineHeading';
+import LineHeading from '@/components/LineHeading';
 import React from 'react';
 import Image, { ImageProps } from 'next/image';
 

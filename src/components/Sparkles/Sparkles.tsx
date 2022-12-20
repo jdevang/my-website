@@ -4,7 +4,7 @@ import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion.hook'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 import { generateId, random, sample } from '@/utils/utils'
-import UnstyledButton from '../UnstyledButton'
+import UnstyledButton from '@/components/UnstyledButton'
 import useIsOnscreen from '@/hooks/useIsOnScreen.hook'
 import { useColorMode, useColorModeValue } from '@chakra-ui/react'
 

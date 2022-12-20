@@ -7,9 +7,9 @@ import {
   useColorModeValue,
   useDisclosure,
   VStack,
-  Link as ChakraLink,
+  Link,
 } from '@chakra-ui/react'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { AiOutlineMenu } from 'react-icons/ai'
 import ToggleTheme from './ToggleTheme'
 
@@ -48,8 +48,8 @@ function MobileNav({ links }: { links: any }): JSX.Element {
         rounded='sm'
         shadow='sm'
       >
-        <Link href='/' passHref>
-          <Button as={ChakraLink} w='full' mt={16} variant='ghost'>
+        <Link as={NextLink} href='/' passHref>
+          <Button w='full' mt={16} variant='ghost'>
             Home
           </Button>
         </Link>
@@ -57,16 +57,16 @@ function MobileNav({ links }: { links: any }): JSX.Element {
         {links.map((link: any, index: number) => {
           if (link.type === `dropdown`) {
             return link.links.map((item: any, i: number) => (
-              <Link href={item.link} key={`${i.toString()}link`} passHref>
-                <Button key={i.toString()} as={ChakraLink} w='full' mx={2} variant='ghost'>
+              <Link  key={`${i.toString()}link`} as={NextLink} href={item.link} passHref>
+                <Button key={i.toString()} w='full' variant='ghost'>
                   {item.name}
                 </Button>
               </Link>
             ))
           }
           return (
-            <Link href={link.link} key={`${index.toString()}link`} passHref>
-              <Button key={index.toString()} as={ChakraLink} w='full' mx={2} variant='ghost'>
+            <Link href={link.link} key={`${index.toString()}link`} as={NextLink} variant='ghost' passHref>
+              <Button key={index.toString()} w='full' variant='ghost'>
                 {link.name}
               </Button>
             </Link>

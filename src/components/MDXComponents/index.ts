@@ -13,7 +13,7 @@ import {
   CustomDiv,
   TextColorMode,
 } from './MDXComponents'
-import Sparkles from '../Sparkles'
+import Sparkles from '@/components/Sparkles'
 import { Checkbox, VStack } from '@chakra-ui/react'
 
 const titles: any = {}

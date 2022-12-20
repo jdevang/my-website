@@ -31,7 +31,7 @@ function Tools(): React.ReactElement {
         >
           Selfhost
         </LineHeading>
-        <Text mt={3}>Some stuff that I selfhost on a docker container at my home :).</Text>
+        <Text mt={3}>Some stuff that I selfhost on a docker container :).</Text>
         <Tabs variant='soft-rounded' colorScheme='blue' align='center' w='100%' mt='10' mb='24'>
           <TabList display='flex' flexWrap='wrap'>
             <Tab
@@ -73,7 +73,6 @@ function Tools(): React.ReactElement {
               }}
               mr={2}
               mt={2}
-              s
             >
               <HStack spacing={1}>
                 <Icon as={AiFillDatabase} />
