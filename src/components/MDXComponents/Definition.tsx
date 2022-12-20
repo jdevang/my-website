@@ -75,7 +75,7 @@ export const Definition = ({ term, definition, link }: DefinitionStylesProps): J
           bg={useColorModeValue('brand.800', 'brand.200')}
         />
         {term}
-      </chakra.span>
+      </chakra.a>
     </Tooltip>
   )
 }
