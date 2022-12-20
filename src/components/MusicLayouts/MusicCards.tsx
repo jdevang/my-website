@@ -29,7 +29,7 @@ export const SongCard = ({ song, titleCard, isPlaying }: SongCardProps): JSX.Ele
         transitionTimingFunction='spring(1 100 10 10)'
         _hover={{ transform: `translateY(-4px)`, shadow: `xl` }}
       >
-        <Skeleton borderRadius='2xl' boxSize={titleCard ? `150px` : `110px`} isLoaded={imageLoad}>
+        {/* <Skeleton borderRadius='2xl' boxSize={titleCard ? `150px` : `110px`} isLoaded={imageLoad}> */}
           <Image
             alt={song?.name + ' album cover'}
             className={styles.image}
@@ -41,7 +41,7 @@ export const SongCard = ({ song, titleCard, isPlaying }: SongCardProps): JSX.Ele
               song.album.images.filter((image: any) => image.height > 109).slice(-1)[0].url
             }
           />
-        </Skeleton>
+        {/* </Skeleton> */}
 
         <Flex direction='column' ml={5} maxWidth='full' isTruncated>
           <Text
