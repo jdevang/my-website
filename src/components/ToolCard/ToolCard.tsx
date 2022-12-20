@@ -11,7 +11,7 @@ import {
   Tag,
   Stack,
 } from '@chakra-ui/react';
-import { usePalette } from '@junglesucks/react-palette';
+import { usePalette } from 'react-palette';
 import { ToolType } from '@/data/tools';
 
 export const ToolCard = ({ name, description, link, id, labels }: ToolType): JSX.Element => {

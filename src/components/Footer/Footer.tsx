@@ -37,7 +37,7 @@ const Footer = (): JSX.Element => {
         py={4}
         px={5}
         spacing={4}
-        align='center'
+        alignItems='center'
       >
         <Flex direction='row' maxW='full' mx={{ base: `auto`, md: 5 }} alignItems='center'>
           {currentlyPlaying?.isPlaying ? (

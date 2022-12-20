@@ -13,7 +13,6 @@
     "@chakra-ui/react": "^2.4.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@junglesucks/react-palette": "github:junglesucks/react-palette",
     "@mdx-js/react": "^2.2.1",
     "@next/font": "13.0.7",
     "@types/node": "18.11.17",
