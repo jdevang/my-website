@@ -45,7 +45,7 @@ export const Definition = ({ term, definition, link }: DefinitionStylesProps): J
       px={2}
       borderRadius={'lg'}
     >
-      <chakra.span
+      <chakra.a
         lineHeight={3}
         as={link ? 'a' : 'span'}
         href={link ? link : null}
