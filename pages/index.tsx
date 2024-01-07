@@ -46,9 +46,9 @@ export default function Home(): React.ReactElement {
               flexGrow={3}
               borderRadius='2xl'
               boxSize='250px'
-              src='./static/images/profile.gif'
+              src='./static/images/profile.jpg'
               objectFit='cover'
-              alt='Junglesucks'
+              alt='Devang'
               onLoad={() => setImageLoad(true)}
             />
             <Flex
@@ -71,7 +71,7 @@ export default function Home(): React.ReactElement {
                 fontSize={{ base: `5xl`, lg: `7xl` }}
                 textAlign={{ base: `center`, lg: `left` }}
               >
-                junglesucks.com!
+                Devang Jayachandran
               </Heading>
               <chakra.p
                 maxW='650px'
@@ -80,25 +80,34 @@ export default function Home(): React.ReactElement {
                 mt={2}
               >
                 Welcome to my website!
-                You can see what music I like over{' '}
+                You can see what{' '}
                 <Link as={NextLink} href='/spotify' passHref>
-                here
+                music
                 </Link>{' '}
-                or{' '}
-                <Link as={NextLink} href='/selfhost' passHref>
-                  self-hosted
-                </Link>{' '} 
-                stuff I&apos;ve dabbled in &{' '}
+                I like
+                & my github {' '}
                 <Link as={NextLink} href='/projects' passHref>
-                  projects
+                projects
+                </Link>{' '}. Also check out my {' '}
+                <Link as={NextLink} href='/portfolio' passHref>
+                portfolio
                 </Link>{' '}
-                that I&apos;ve done. If you get lucky you might even find some of my {' '}
-                <Link as={NextLink} href='https://ghost.junglesucks.com' passHref>
-                  blogs
-                </Link>
-                .
+                or  {' '}
+                <Link as={NextLink} href='/about' passHref>
+                contact 
+                </Link>{' '}
+                me to know more.
               </chakra.p>
             </Flex>
+            <Image
+              flexGrow={3}
+              borderRadius='2xl'
+              boxSize='250px'
+              src='./static/images/profile.gif'
+              objectFit='cover'
+              alt='Devang'
+              onLoad={() => setImageLoad(true)}
+            />
           </Flex>
         </Flex>
       </Box>

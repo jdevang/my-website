@@ -16,15 +16,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {
-  const userResponse = await fetch(`https://api.github.com/users/junglesucks`);
+  const userResponse = await fetch(`https://api.github.com/users/jdevang`);
   const userReposResponse = await fetch(
-    `https://api.github.com/users/junglesucks/repos?per_page=100`
+    `https://api.github.com/users/jdevang/repos?per_page=100`
   );
 
   const user = await userResponse.json();
   const repositories = await userReposResponse.json();
 
-  const withoutProfile = repositories.filter((repo: any) => !(repo.full_name == 'junglesucks/junglesucks'));
+  const withoutProfile = repositories.filter((repo: any) => !(repo.full_name == 'jdevang/jdevang'));
 
   const notForked = withoutProfile.filter((repo: any) => !repo.fork);
 

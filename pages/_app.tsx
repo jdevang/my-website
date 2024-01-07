@@ -36,28 +36,28 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
   return (
     <>
       <DefaultSeo
-        defaultTitle='JungleSucks'
-        titleTemplate='%s | JungleSucks'
+        defaultTitle='Devang&apos;s Portfolio'
+        titleTemplate='%s | Devang'
         openGraph={{
-          title: `JungleSucks`,
+          title: `Devang's Portfolio`,
           type: `website`,
-          site_name: `JungleSucks`,
+          site_name: `Devang's Portfolio`,
           images: [
             {
-              url: `https://me.junglesucks.com/static/images/profile.gif`,
+              url: `https://me.jdevang.com/static/images/profile.jpg`,
               alt: `Profile Picture`,
             },
           ],
         }}
-        description='This site is a test-bench.'
+        description='This site is my Portfolio and Projects.'
       />
       <ChakraProvider theme={theme}>
         <PlausibleProvider
-          domain='junglesucks.com'
+          domain='jdevang.com'
           selfHosted
           trackOutboundLinks
           enabled={process.env.NODE_ENV === 'production'}
-          customDomain={'https://me.junglesucks.com'}
+          customDomain={'https://me.jdevang.com'}
         >
           <QueryClientProvider client={queryClient}>
             <MDXProvider components={MDXComponents}>

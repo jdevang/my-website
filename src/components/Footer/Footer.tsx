@@ -145,14 +145,14 @@ const Footer = (): JSX.Element => {
           </Tooltip>
         </Text>
         <Stack direction='row' spacing={6} ml='auto' mr={{ base: `auto`, md: 5 }}>
-          <SocialIcons label='GitHub' href='https://github.com/junglesucks/'>
+          <SocialIcons label='GitHub' href='https://github.com/jdevang/'>
             <FaGithub />
           </SocialIcons>
           <SocialIcons label='LinkedIn' href='https://www.linkedin.com/in/this-is-devang/'>
             <FaLinkedin />
           </SocialIcons>
 
-          <SocialIcons label='Instagram' href='https://www.instagram.com/junglesucks/'>
+          <SocialIcons label='Instagram' href='https://www.instagram.com/devang_is_at_penn/'>
             <FaInstagram />
           </SocialIcons>
         </Stack>

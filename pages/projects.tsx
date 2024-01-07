@@ -52,7 +52,7 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
           <Text mt={3}>A list of some of the public repositories on my GitHub.</Text>
           <Button
             as='a'
-            href='https://github.com/junglesucks'
+            href='https://github.com/jdevang'
             variant='ghost'
             colorScheme='brand'
             size='lg'

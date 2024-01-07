@@ -17,10 +17,6 @@ import styled from '@emotion/styled';
 
 const links = [
   {
-    name: `SelfHost`,
-    link: `/selfhost`,
-  },
-  {
     name: `Projects`,
     link: `/projects`,
   },
@@ -34,20 +30,25 @@ const links = [
     link: `/wip`
   },
   {
-    type: `dropdown`,
-    name: `More`,
-    links: [
-      {
-        name: `Blog`,
-        link: `https://ghost.junglesucks.com`,
-      },
-      // {
-      //   name: 'JGEZ',
-      //   // link: `https://jgez.junglesucks.com`,
-      //   link: `/jgez`
-      // }
-    ],
+    name: `About Me`,
+    // link: `https://portfolio.junglesucks.com`,
+    link: `/wip`
   },
+  // {
+  //   type: `dropdown`,
+  //   name: `More`,
+  //   links: [
+  //     {
+  //       name: `Blog`,
+  //       link: `https://ghost.jdevang.com`,
+  //     },
+  //     // {
+  //     //   name: 'JGEZ',
+  //     //   // link: `https://jgez.junglesucks.com`,
+  //     //   link: `/jgez`
+  //     // }
+  //   ],
+  // },
 ];
 
 function Nav(): JSX.Element {
@@ -120,7 +121,7 @@ function Nav(): JSX.Element {
                   }}
                   color={colorMode === 'light' ? 'gray.900' : 'white'}
                 >
-                  JungleSucks
+                  Devang Jayachandran
                 </Link>
               )}
           </Box>
@@ -142,7 +143,7 @@ const AnimatedTitle = () => (
     fontWeight='semibold'
     textAlign='center'
   >
-    JungleSucks
+    Devang Jayachandran
     {/* eslint-disable-next-line @next/next/no-img-element */}
     <chakra.svg
       className='path-under'
