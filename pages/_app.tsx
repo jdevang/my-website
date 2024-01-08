@@ -37,12 +37,12 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
     
     <>
       <DefaultSeo
-        defaultTitle='Devang&apos;s Portfolio'
+        defaultTitle='Devang&apos;s Website'
         titleTemplate='%s | Devang'
         openGraph={{
-          title: `Devang's Portfolio`,
+          title: `Devang's Website`,
           type: `website`,
-          site_name: `Devang's Portfolio`,
+          site_name: `Devang's Website`,
           images: [
             {
               url: `https://me.jdevang.com/static/images/profile.jpg`,

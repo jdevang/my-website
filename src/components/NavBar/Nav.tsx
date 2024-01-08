@@ -25,14 +25,9 @@ const links = [
     link: `/spotify`,
   },
   {
-    name: `Portfolio`,
+    name: `Research`,
     // link: `https://portfolio.junglesucks.com`,
-    link: `/portfolio`
-  },
-  {
-    name: `About Me`,
-    // link: `https://portfolio.junglesucks.com`,
-    link: `/about`
+    link: `/research`
   },
   // {
   //   type: `dropdown`,

@@ -89,11 +89,11 @@ export default function Home(): React.ReactElement {
                 <Link as={NextLink} href='/projects' passHref>
                 projects
                 </Link>{' '}. Also check out my {' '}
-                <Link as={NextLink} href='/portfolio' passHref>
-                portfolio
+                <Link as={NextLink} href='/research' passHref>
+                research
                 </Link>{' '}
                 or  {' '}
-                <Link as={NextLink} href='/about' passHref>
+                <Link as={NextLink} href='mailto:devang.j1998@gmail.com' passHref>
                 contact 
                 </Link>{' '}
                 me to know more.
