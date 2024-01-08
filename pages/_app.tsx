@@ -34,6 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps): React.ReactEl
   }, [])
 
   return (
+    
     <>
       <DefaultSeo
         defaultTitle='Devang&apos;s Portfolio'

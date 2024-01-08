@@ -27,12 +27,12 @@ const links = [
   {
     name: `Portfolio`,
     // link: `https://portfolio.junglesucks.com`,
-    link: `/wip`
+    link: `/portfolio`
   },
   {
     name: `About Me`,
     // link: `https://portfolio.junglesucks.com`,
-    link: `/wip`
+    link: `/about`
   },
   // {
   //   type: `dropdown`,

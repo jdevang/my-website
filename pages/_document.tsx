@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <link rel="icon" href="/static/images/favicon.ico" sizes="any" />
           <link
             href='https://fonts.googleapis.com/css2?family=Inter&display=optional'
             rel='stylesheet'

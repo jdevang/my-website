@@ -99,16 +99,17 @@ export default function Home(): React.ReactElement {
                 me to know more.
               </chakra.p>
             </Flex>
-            <Image
+            
+          </Flex>
+          {/* <Image
               flexGrow={3}
               borderRadius='2xl'
               boxSize='250px'
               src='./static/images/profile.gif'
               objectFit='cover'
-              alt='Devang'
+              alt='Bulbasaur'
               onLoad={() => setImageLoad(true)}
-            />
-          </Flex>
+            /> */}
         </Flex>
       </Box>
     </>

@@ -1,13 +1,13 @@
 import React from 'react'
 import { Box, Button, Flex, SimpleGrid, Text, 
-  // VStack
+  VStack
  } from '@chakra-ui/react'
 import { FaGithub } from 'react-icons/fa'
 import { NextSeo } from 'next-seo'
 import LineHeading from '@/components/LineHeading'
 import RepoCard from '@/components/RepoCard'
-// import PinnedProjects from '@/components/PinnedProjects'
-// import { pinnedRepos, pinnedRepoType } from '@/data/pinnedRepos'
+import PinnedProjects from '@/components/PinnedProjects'
+import { pinnedRepos, pinnedRepoType } from '@/data/pinnedRepos'
 import { repoType } from '@/pages/api/github'
 
 interface ProjectsProps {
@@ -23,7 +23,7 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
       <NextSeo title='Projects' />
       <Box width='full' px={3} minH='100vh' height='full' mx='auto' maxW='6xl' py='28'>
         <Flex direction='column' alignItems='center' width='full' px={3} height='full' mx='auto'>
-          {/* <LineHeading fontSize={{ base: `5xl`, md: `6xl` }} mx='auto' textAlign='center'>
+          <LineHeading fontSize={{ base: `5xl`, md: `6xl` }} mx='auto' textAlign='center'>
             My projects
           </LineHeading>
           <Text mt={3}>A quick collection of my projects.</Text>
@@ -40,14 +40,14 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
               .map((data: pinnedRepoType, index) => (
                 <PinnedProjects
                   key={index.toString()}
-                  repo={repos.filter((x: repoType) => x.name === data.id)[0]}
-                  left={index % 2 === 0}
+                  // repo={repos.filter((x: repoType) => x.name === data.id)[0]}
+                  left={index % 2 === 1}
                   projectData={data}
                 />
               ))}
-          </VStack> */}
+          </VStack>
           <LineHeading fontSize={{ base: `5xl`, lg: `5xl` }} textAlign='center'>
-            Projects
+            Repositories
           </LineHeading>
           <Text mt={3}>A list of some of the public repositories on my GitHub.</Text>
           <Button
@@ -95,7 +95,9 @@ export async function getServerSideProps(): Promise<{ props: ProjectsProps }> {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_HOST || `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}/api/github`
   )
-
+  // const response = await fetch(
+  //   `http://localhost:3000/api/github`
+  // )
   const { stars, repos, followers } = await response.json()
 
   return { props: { stars, repos, followers, revalidate: 600 } }
