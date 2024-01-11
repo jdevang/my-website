@@ -92,12 +92,12 @@ function Projects({ repos }: ProjectsProps): React.ReactElement {
 }
 
 export async function getServerSideProps(): Promise<{ props: ProjectsProps }> {
-  // const response = await fetch(
-  //   `${process.env.NEXT_PUBLIC_HOST || `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}/api/github`
-  // )
   const response = await fetch(
-    `http://localhost:3000/api/github`
+    `${process.env.NEXT_PUBLIC_HOST || `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}/api/github`
   )
+  // const response = await fetch(
+  //   `http://localhost:3000/api/github`
+  // )
   const { stars, repos, followers } = await response.json()
 
   return { props: { stars, repos, followers, revalidate: 600 } }
