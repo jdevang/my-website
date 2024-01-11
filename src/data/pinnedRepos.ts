@@ -1,5 +1,14 @@
 export const pinnedRepos: pinnedRepoType[] = [
     {
+      image:'/static/images/project-gpt-pipeline-1.png',
+      name: 'GPT Pipeline to solve Contest Code',
+      stack: ['Python', 'GPT-4', 'Generative AI'],
+      id: 'gptPipeline',
+      repoLink: 'https://github.com/jdevang/gpt-pipeline',
+      longDescription:
+        'A pipeline to streamline the ability of GPT to solve complex contest programming problems by introducing tailored system prompts to enhance its generation capabilities. The pipeline performs significantly better than both GPT-4 and ChatGPT(GPT-3.5). The pipeline solves > 60% testcases on average and is even able to solve 100% of the testcases for some problems that were previously very hard to solve using ChatGPT.',
+    },
+    {
       image:'/static/images/project-1-code.png',
       name: 'Decentralized Chat',
       stack: ['React', 'Go', 'Docker'],

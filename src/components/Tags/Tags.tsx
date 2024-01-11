@@ -2,10 +2,10 @@ import { getTotalCharCode } from '@/utils/utils';
 import { Stack, Tag, TagLeftIcon, TagLabel, useMediaQuery } from '@chakra-ui/react';
 import React from 'react';
 import { BsFillLightningFill } from 'react-icons/bs';
-import { FaDiscord, FaReact } from 'react-icons/fa';
+import { FaDiscord, FaReact, FaPython } from 'react-icons/fa';
 import { IoLogoNodejs } from 'react-icons/io';
 import { SiMarkdown } from 'react-icons/si';
-import { NextJSIcon, SemanticIcon, TypeScriptIcon, GoIcon, DockerIcon } from '../Icons';
+import { NextJSIcon, SemanticIcon, TypeScriptIcon, GoIcon, DockerIcon, GPTIcon} from '../Icons';
 
 const tagDict = {
   React: FaReact,
@@ -18,6 +18,9 @@ const tagDict = {
   'Semantic-UI': SemanticIcon,
   'Go': GoIcon,
   'Docker': DockerIcon,
+  'Python': FaPython,
+  'Generative AI': GPTIcon,
+  'GPT-4': GPTIcon,
 };
 
 interface TagsProps {
