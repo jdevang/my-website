@@ -29,6 +29,11 @@ const links = [
     // link: `https://portfolio.junglesucks.com`,
     link: `/research`
   },
+  {
+    name: `Research`,
+    // link: `https://portfolio.junglesucks.com`,
+    link: `/public/static/Devang_Jayachandran_resume.pdf`
+  },
   // {
   //   type: `dropdown`,
   //   name: `More`,

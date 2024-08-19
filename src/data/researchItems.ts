@@ -1,5 +1,25 @@
 export const researchItems: ResearchItem[] = [
     {
+      id: 'generative-ai-pipeline',
+      title: 'A Large Language Model Pipeline to Automate the Solution of Competitive Programming Problems',
+      tags: ['Statistical Analysis', 'Artificial Intelligence', 'Generative AI', 'GPT API', 'Competitive Programming'],
+      authors: [{ name: 'Devang Jayachandran', avatar: '/static/images/profile.jpg' }, { name: 'Dr. Jeremy J. Blum', avatar: '/static/images/blum.jpg' }],
+      abstract:
+        "The recent rapid introduction of large language models has enabled new black box approaches to optimize the application of these models for various scenarios. GPT-4 is a multimodal large language model introduced by OpenAI which can answer complex questions, analyze nuanced data, and solve complicated programming problems. The performance of GPT is dependent upon the provided prompt and hyperparameters. This paper explores the effect of minor variations in system prompt and parameters including temperature and top-p for code generation and code accuracy for competitive programming tasks. Temperature controls the amount of randomness in the response, with a temperature of zero producing deterministic output. Top-p controls the cumulative probability distribution for tokens considered for the next output token. Based on the results, we propose approaches to optimize system prompts for code-generation and parameter values to improve the correctness of code. In addition, we propose a pipeline that utilizes these enhancements to effectively solve algorithmic puzzles common in computer science education, in addition to complex contest programming problems.",
+      date: '2024-04-19',
+      pdf: 'https://peer.asee.org/45702',
+    },
+    {
+      id: 'generative-ai-participation',
+      title: 'Leveraging Generative Artificial Intelligence to Broaden Participation in Computer Science',
+      tags: ['Statistical Analysis', 'Artificial Intelligence', 'Generative AI', 'ChatGPT', 'Computer Science'],
+      authors: [{ name: 'Devang Jayachandran', avatar: '/static/images/profile.jpg' }, { name: 'Pranit S. Maldikar', avatar: '/static/images/pranit.png' }, { name: 'Dr. Jeremy J. Blum', avatar: '/static/images/blum.jpg' }, { name: 'Tyler S. Love', avatar: '' }],
+      abstract:
+        "Generative Artificial Intelligence (AI) was incorporated into a competitive programming event that targeted undergraduate students, including those with little programming experience. The competition incorporated a range of challenge design approaches that promoted meaningful interaction with generative AI system, even while keeping the challenge difficulty level to an appropriate level. An analysis of survey responses and competition data showed that this format lowered barriers to participation, successfully engaged students throughout the competition, and increased the likelihood that they would participate in a similar event. In an extension of this work, a professional development workshop for high school teachers is being developed, along with a contest for high school students. Participant surveys and logs of interaction with the contest and generative AI systems will be analyzed to measure the effect of generative AI on student self-efficacy and suggest ways to integrate generative AI instruction into computer science curriculum.",
+      date: '2024-05-20',
+      pdf: 'https://doi.org/10.1609/aaaiss.v3i1.31262',
+    },
+    {
       id: 'generative-ai-pedogology',
       title: 'An Analysis of the Impact of Advances in Generative Artificial Intelligence on Programming Assignments and Competitions',
       tags: ['Artificial Intelligence', 'Generative AI', 'ChatGPT', 'Plagiarism Detection'],
