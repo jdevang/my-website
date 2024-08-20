@@ -30,9 +30,9 @@ const links = [
     link: `/research`
   },
   {
-    name: `Research`,
+    name: `Résumé`,
     // link: `https://portfolio.junglesucks.com`,
-    link: `/public/static/Devang_Jayachandran_resume.pdf`
+    link: `./static/Devang_Jayachandran_resume.pdf`
   },
   // {
   //   type: `dropdown`,
